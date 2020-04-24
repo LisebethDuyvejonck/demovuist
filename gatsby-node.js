@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allContentfulVuist.edges.forEach(({ node }) => {
     createPage({
-      path: node.id,
+      path: `vuistje/${node.id}`,
       component: path.resolve(`./src/templates/vuistje.js`),
       context: {
         id: node.id,
