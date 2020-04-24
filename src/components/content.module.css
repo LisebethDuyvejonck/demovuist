@@ -1,0 +1,20 @@
+.container {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.message {
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.from {
+  margin-left: 5vw;
+}
+
+.from::before {
+  content: "\2014";
+}

@@ -1,0 +1,10 @@
+.note {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.note a {
+  font-weight: 700;
+  color: var(--primary-color);
+}

@@ -1,0 +1,16 @@
+.grid {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 60ch;
+}
+
+.footer {
+  justify-self: center;
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+}

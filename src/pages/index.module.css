@@ -1,0 +1,4 @@
+.button {
+  composes: button from "../styles/controls.module.css";
+  align-self: center;
+}

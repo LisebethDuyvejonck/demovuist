@@ -1,0 +1,50 @@
+@import "./reset.css";
+@import "./tokens.module.css";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  background-color: var(--dark-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:any-link {
+  color: white;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+*:focus {
+  outline: 0.1rem dashed var(--primary-color);
+}
+
+#___gatsby > div {
+  min-height: 100%;
+  width: 100%;
+  position: fixed; /* https://developers.google.com/web/updates/2016/12/url-bar-resizing */
+  display: grid;
+  grid-template-rows: 20vh 1fr 1.5rem;
+}
+
+@media (max-height: 800px) {
+  #___gatsby > div {
+    grid-template-rows: auto 1fr 1.5rem;
+  }
+}

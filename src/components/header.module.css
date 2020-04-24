@@ -1,0 +1,34 @@
+.container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.titel {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.subtitel {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: white;
+}
+
+@media (max-height: 800px) {
+  .container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .titel {
+    font-size: 4rem;
+  }
+
+  .subtitel {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+}

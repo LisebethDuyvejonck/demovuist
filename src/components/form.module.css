@@ -1,0 +1,38 @@
+.form {
+  color: white;
+  width: 80vw;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-size: 1.2rem;
+}
+
+.input {
+  border: none;
+  background-color: black;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.text {
+  composes: input;
+}
+
+.area {
+  composes: input;
+}
+
+.button {
+  composes: button from "../styles/controls.module.css";
+  margin: 2rem auto 0;
+  display: block;
+}
